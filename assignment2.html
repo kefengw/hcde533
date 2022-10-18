@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Example Student's HCDE 439 Physical Computing Page!</title> 
+        <title>Kefeng Wang 598 Assignment-2</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
@@ -14,32 +14,41 @@
         <div class="header">
             <h1>A2: Parametric Modelling with Grasshopper</h1>
             <p>by Kefeng Wang in HCDE598</p>
+            <img src="images/A2-PrintedOut.png" width="800">
+            <p>This is the outcome of my laser Cutting.</p>
             <img src="images/A2-GrasshopperOverview.png" width=800>
-            <p>This is the screenshop of the overview in the Grasshopper. There are five steps of making the shape shown below.</p>
+            <p>This is the screenshot of the overview in the Grasshopper. There are five steps of making the shape shown below.</p>
             <img src="images/A2-FinalAi.png" width="800">
             <p>
-                this is also the outcome I would used to print in the Adobe AI.The first step is to create the rectangular and<br>
-                 move it away from the y-axis. That space is for the semicircle. 
+                I exported rihno modeling into Adobe Illustrator.The image above is how it look like in SVG file. It is about 
+                10 cm long and 2 cm wide.<br>
+                The first step is to create a rectangular as the main body. Its width is twice of the radius of the cicle on 
+                each side. And it should be 1 radius away from the orgin.  
             </p>
             <img src="images/A2-biggerRec.png" width="800">
             <img src="images/A2-BiggerRecRView.png" width="800">
             <P>
-                The second step is to create two circles on the each side of the rectangular. 
+                The second step is to create two circles on the each side of the rectangular. Because the the radius of the circle is 
+                connected with the width of the rectangular, I used a number slider to control this variable. 
             </P>
             <img src="images/A2-CirOnEachSide.png" width="800">
             <img src="images/A2-CirOnEachSideRView.png" width="800">
             <p>
-                Then, using the <b>TRIM</b> function creates two semicircles; makes the semicircles and rectangular together. 
+                Then, using the <b>TRIM</b> function creates two semicircles; makes the semicircles and rectangular together. I was straggling 
+                with the function modules "TRIM with Region" and "Trim with Regions". It took me extreme long to figure it out. 
             </p>
             <img src="images/A2-Outline.png" width="800">
             <img src="images/A2-OutlineRView.png" width="800">
             <p>
-                Next step is to create four small rectangulars. Two are on the upper side, and two are on the bottom side.
+                Next step is to create four small rectangulars. I would use these four
+                rectangular to create notches. I used number slider to indicate its width so that it could be used for cardboards with various thickness. 
+                I have used the move function to arrange the location of these rectangulars. Two are on the upper side, and two are on the bottom side.
             </p>
             <img src="images/A2-FourNotches.png" width="800">
             <img src="images/A2-FourNotchesRView.png" width="800">
             <p>
-                The fourth step is to group these four rectangular together and trim them with outline made in last step.
+                The fourth step is to group these four rectangular together and trim them with outline made in the previous step. “Flatten” was one of 
+                the confusing part for me. At first I did not flatten the joint curves, when I pluged them with trim function, an error message poped up.
             </p>
             <img src="images/A2-FinalTrim.png" width="800">
             <img src="images/A2-FinalTrimRView.png" width="800">
@@ -47,9 +56,20 @@
                 The last step is to make the joint curves into surface. 
             </p>
             <img src="images/A2-Outcome.png" width="800">
-
             <p>
-                You can download my Rihno and Grasshopper file from <a href="images/KefengA2.zip">here</a>. <br>
+                I used a laser cut in GIX, another master program located in Bellevue. They have way better equipments than the Mill has. They could review print-outs
+                on our laptop directly through the App. This is how it looks like. 
+            </p>
+            <img src="images/A2-GIXPrint.JPG" width="800">
+            <p>
+                Video of Laser Cutting!!!
+            </p>
+            <video width="800" height="auto" controls>
+                <source src="images/A2-GIX Cutting.mp4">
+                
+            </video>
+            <p>
+                You can download my Rihno and Grasshopper file from <a href="images/KefengA2.zip">here</a>. <br><br>
             </p>
         </div>
         

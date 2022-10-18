@@ -13,18 +13,23 @@ h1,h2,h3,h4 {
 a {
   color: #000;
 }
-
+p{
+  width: 800px;
+}
 .header {
   background: #fff;
   color: #000;
   height: 500px;
   padding: 30px 30px 30px;
+  /* width: 800; */
 }
 
 .header h1 {
   font-size: 50px;
   }
-
+img{
+  display: block;
+}
 .assignment {
   font-size: 12px;
   line-height: 24px;
