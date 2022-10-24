@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Example Student's HCDE 439 Physical Computing Page!</title> 
+        <title>Kefeng Wang 598 Assignment-3</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
@@ -12,12 +12,106 @@
     <body> 
 
         <div class="header">
-            <h1>Example Student's Assignment 2!</h1>
-            <p>
-            <img src="red-panda.jpg" width=400></a>
+            <h1>A2: Parametric Modelling with Grasshopper</h1>
+            <p>by Kefeng Wang in HCDE598</p>
             </p>
+            <img src="images/A3-AllItems.JPG" width="800">
+            <h2>3D Printer Set-Up</h2>
             <p>
-            Here is all the documentation for assignment 2!
+                It cost us two and a half hours to set up our 3D printer. I shared this printer with Kyle and Sherry. Unboxing and connecting each 
+                piece are quite easy but time-consuming. 
+            </p>
+            <img src="images/A3-3DPrinterSetUp.JPG" width="800">
+            <p>    
+                However, we spent over 3 hours adjusting the bed's height level. The gear of the left top 
+                corner was as down as most, but it was still too far away from the extruder. So we chose to adjust the height of the extruder instead.
+            </p>
+            <img src="images/A3-HeightAdj.JPG" width="800">
+            <p>
+                We also run the test print (square) to make sure everything goes well.
+            </p>
+            <video width="800" height="auto" controls>
+                <source src="images/A3-PrinterSetUp.mov">
+                
+            </video>
+            <h2>3D Printing</h2>
+            <p>
+                <b>The first cub</b> I made was <b>low quality</b> ,and it took 20mins for my printer to complete. The dimension of it is  20.16mm, 19.96mm, and 19.70mm. 
+                The bottom part was melted a little bit. But this situation only happened on the cubes. 
+            </p>
+            <img src="images/A3-Cube-ChangeQuality.png" width="800">
+            <img src="images/A3-CubLQ.png" width="800">
+            <p>
+                <b>The second cube</b> is <b>super quality</b>. It cost more than 50mins to complete. 
+                The dimension of the super quality cube is 19.67mm, 20.32mm, and 20.17mm.
+            </p>
+            <img src="images/A3-Cube-SQ.JPG" width="800">
+            <img src="images/A3-CubeSQDimension.png" width="800">
+            <p>
+                <b>The third cube</b> is <b>standard quality</b>. It cost 22mins to complete. 
+                The dimension of the standard quality cube is 20.02mm, 19.38mm, and 19.94mm.
+            </p>
+            <img src="images/A3-CubeStanQ.png" width="800">
+            <p>
+                <b>The concentric cube</b> is <b>low quality</b>. It cost 36mins to complete. 
+                The reason why I preferred the low quality is that it is faster.
+                The dimension of the super quality cube is 20.30mm, 19.72mm, and 20.18mm.
+            </p>
+            <img src="images/A3-Cube-Concentric.png" width="800">
+            <img src="images/A3-CubeConcen.JPG" width="800">
+            <img src="images/A3-CubeConCenDimen.png" width="800">
+            <p>
+                The tube with single extrusion takes about 36mins to complete. The thickness of my tube is 3mm, which I set in Rhino. 
+                I guess that is the reason why this is no difference between single extrusion and double extrusion. The dimension is 
+                29.82mm(diameter), 29.93(height), and 3.52 (thickness).
+            </p>
+            <img src="images/A3-Tube-Single.png" width="800">
+            <img src="images/A3-TubeSingE.JPG" width="800">
+            <img src="images/A3-TubeSingEDemin.png" width="800">
+            <p>
+                The tube with double extrusion and random z-seam alignment is about 46mins. The dimension is 
+                30.11mm(diameter), 30.04(height), and 3.38 (thickness).
+            </p>
+            <img src="images/A3-Tube-Zrandom.png" width="800">
+            <img src="images/A3-TubeDouEDem.png" width="800">
+            <p>
+                The difference between o.1mm tolerance and 0.001mm tolerance in cylinders is more
+                 obvious than the difference between single and double extrusions. 0.1mm tolerance makes it have more edges. 
+                 But there is only a slight difference in printing time. It took 41mins to complete.
+                 The height is 29.80mm, and the diameter is 29.68mm.
+            </p>
+            <img src="images/A3-Cly01Tol.JPG" width="800">
+            <img src="images/A3-Cly01tolDem.png" width="800">
+            <p>
+                The 0.001mm tolerance cylinder took 40mins. The surface is more curved than that of 0.1mm tolerance.
+                The time for printing out this cylinder is 40mins and 44s. The height is 30.05mm, and the diameter is 29.07mm. 
+            </p>
+            <img src="images/A3-Cyl0001tol.JPG" width="800">
+            <img src="images/A3-cly0001dem.png" width="800">
+            <p>
+                The special mode "spiralize outer contour" is about 26 min to complete. The diameter is 29.51mm, and the height is 29.08mm. 
+            </p>
+            <img src="images/A3-Cylinder-SpecialMode.png" width="800">
+            <img src="images/A3-ClySpecM.JPG" width="800">
+            <img src="images/A3-CylSpecMDem.png" width="800">
+
+            <p>
+                The support mode takes over more than 50min. The bottom support is hard to peel off. The height is 30.10mm, and the diameter is 29.83mm.
+            </p>
+            <img src="images/A3-CylinderWithSupport.png" width="800">
+            <img src="images/A3-CylWS.JPG" width="800">
+            <img src="images/A3-CylSupDem.png" width="800">
+            <p>
+                This is my nested model. It takes 1h 33 mins to complete. 
+            </p>
+            <img src="images/A3-Nest3Dmodel.png" width="800">
+            <img src="images/A3-NestTime.png" width="800">
+
+
+
+
+            <p>
+             Here is all the documentation for assignment 3!
             </p>
         </div>
         
