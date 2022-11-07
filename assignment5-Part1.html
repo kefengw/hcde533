@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Kefeng Wang 598 Assignment-4</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <h1>A5-Part One: Getting Meshy! and Lamps! </h1>
+            <p>by Kefeng Wang in HCDE598</p>
+            <img src="images/A5-Part1-Outcome.png" width="800">
+            <p>
+                This is the view of the project in the Rhino:
+            </p>
+            <img src="images/A5-Part1-RhinoView.png" width="800">
+            <ul>
+               <li> <a href="https://www.thingiverse.com/thing:1871975">The bigger husky stl-file reference</a></li>
+               <li> <a href="https://www.thingiverse.com/thing:673439">The smaller husky stl-file reference</a></li>
+               <li> <a href="images/A5-Part1-husky-output.stl">My project link</a></li>
+            </ul>
+            <p>
+                The bigger husky is already a closed mesh, so I have not done anything special. I have used the command line "QuadRemesh" to 
+                change the STL model from triangulateMesh. I also reduced the mesh amount from 278,636 polygons to 8000 target quad count. 
+                Even though this change makes the model lose a lot of details, there would be so many details when printing it out.
+            </p>
+            <img src="images/A5-Part1-bigQuadRemesh.png" width="800">
+            <p>
+                The smaller husky is open mesh after I checked it out in the Rhino. The first step I took was to reduce the mesh amount from 60K+ to 
+                20000. I also used the "QuadRemesh" command to change the mesh type. The open mesh is closed after reducing. 
+            </p>
+            <img src="images/A5-Part1-openMesh.png"> 
+            <p>
+                Now I have imported two huskies into my Rhino file; even one of them is more like the wolf. However, there was still one problem I noticed.
+                The bigger husky model comes with a rock which is not very smooth. So the small husky is very difficult to stand on it. The image below 
+                is a screenshot of how two huskies look from the front of the view. The smaller husky is not actually standing on the rock but 
+                "standing in the rock". 
+            </p>
+            <img src="images/A5-Part1-twoDogs.png">
+            <p>
+                So in order to solve this problem, I used the "PointOn" command to move points around the dog foot of the smaller one. So the height of 
+                these points could be lower than the points of the dog's foot, which I believe could make the smaller husky standing in a much more normal way. 
+            </p>
+            <img src="images/A5-Part1-AdjustPoints.png"
+
+            <p>
+             Here is all the documentation for assignment 5 Part One!
+            </p>
+        </div>
+        
+    </body>
+</html>
