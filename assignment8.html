@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Kefeng Wang 598 Assignment-4</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <h1>Assignment 7: Final Project Proposal</h1>
+            <p>by Kefeng Wang in HCDE598</p>
+            <img src="images/a8-finalOutcomeW.png" width="800">
+            <h2>Concept</h2>
+            <p>
+                What I want to make is a shredder as a Christmas gift for my friend. The video shown below is where I found my insights. Ideally, the shredder should be able to cut paper into
+                pieces easily. 
+            </p>    
+            <iframe width="800" height="315" src="https://www.youtube.com/embed/ltVqj0MW_hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                
+            </iframe>
+            <h2>3D Design in Rhino and Printing</h2>
+            <p>
+                My design has five major parts: a Funnel, an Upper Case, two sets of blades, and stand. In total, there are 20 pieces for the whole shredder. 5 blades are <b>Laser Cut</b> of the Acrylic board. Only one blade is <b>3D printed</b>.<br><br>
+                There are six spaces in the innards. 4 of them is created by <b>molding and casting</b> from the previous assignment. The rest two are also 3D printed. 
+
+                The rest parts are all designed in Rhino. I also use <b>Grasshopper</b> to create gears. <br><br>
+                You can download my STL file from <a href="images/a8-shredderF.stl">here</a>!
+            </p>
+            <img src="images/a8-piecesOverview.png" width="800">
+            <table>
+                <tr>
+                    <th>Pieces Name</th>
+                    <th>Images</th>
+                    <th>techniques</th>
+                </tr>
+                <tr>
+                    <td><a href="images/a8-funnel.stl">Funnel</a></td>
+                    <td><img src="images/a8-FunnelNeedToReplace.png" alt="" width="350"></td>
+                    <td>Rhino & 3D printing</td>
+                </tr>
+                <tr>
+                    <td><a href="images/a8-upperPiece.stl">Upper Case of innards</a></td>
+                    <td><img src="images/a8-UpperCaseImg.JPG" alt="" width="350"></td>
+                    <td>Rhino & 3D printing</td>
+                </tr>
+                <tr>
+                    <td><a href="images/a8-leftBladeC.stl">Left set of the Blades</a></td>
+                    <td><img src="images/a8-leftBladesCImg.png" alt="" width="350"></td>
+                    <td>Rhino, 3D printing, Modling(Spaceers), Laser Cutting(Blades), Grasshopper(Gear)</td>
+                </tr>
+                <tr>
+                    <td><a href="images/a8-RightBladesCwithhand.stl">Right set of the blades with hand lever</a></td>
+                    <td><img src="images/a8-rightBladeIMG.JPG" alt="" width="350"></td>
+                    <td>Rhino, 3D printing, Modling(Spaceers), Laser Cutting(Blades),Grasshopper(Gear)</td>
+                </tr>
+                <tr>
+                    <td><a href="images/a8-bottomPiece.stl">bottom Case of innards</a></td>
+                    <td><img src="images/a8-bottomPieceIMG.JPG" alt="" width="350"></td>
+                    <td>Rhino & 3D printing</td>
+                </tr>
+                <tr>
+                    <td><a href="images/a8-stand.stl">Stand</a></td>
+                    <td><img src="" alt=""></td>
+                    <td>Rhino & 3D printing</td>
+                </tr>
+            </table>
+           
+            <p>
+                There are two biggest challenges in the design process: <br>
+                The first one is creating the blades. The shapes with three teeth are very hard to generate in Rhino. So I used a couple of curves and jointed them together to make my first tooth. Then I duplicate the first tooth and rotate twice with 120 degrees and 240 degrees to create the second and the third blades. 
+            </p>
+            <img src="images/a8-bladeMaking.png" alt="" width="800">
+            <p>
+                The second one is to make all parts move together. I just need to make a hexagon-shaped hole at the center of each piece I want to rotate together; then, I use the hexagonal cylinder to "combine" them together.  <br>
+            </p>
+            <img src="images/a8-rotationShaftsSet.png" alt="" width="800">
+            <p>
+                One rotation shaft attaches the gear on its end. Another rotation shaft also includes one gear in the middle. With the help of the set of gears, the two rotation shafts could move at the same pace. I followed an YouTube Video to create my gear. Here is the link for that <a href="https://www.youtube.com/watch?v=dnfvGDJF2l0&t=564s">Video</a>.<br>
+                You can down my gear from <b><a href="images/a8-gear.zip">Here</a></b>
+            </p>
+            <img src="images/a8-gearMaking.png" alt="" width="800">
+            <p>
+                The rest of part is very relatively easy. In the whole process, I used the following techniques: <b>rhino</b>, <b>Grasshopper</b>, <b>3D Printing</b>, <b>Laser Cutting</b>, and <b>Molding</b>.
+            </p>
+
+            <h2>Revision</h2>
+            <p>
+                If you looked back on the project propossal, there is no joints for the upper case and bottom case. After I printed them out, it would slide way when I trying to move the handle. So I revised my model in Rhino and adding the small joints to help the upper case attach to the bottom one closely. 
+            </p>
+
+            <p class="lastSen">
+                Here is all the documentation for assignment 8 !<br> 
+             you can go back to the <b><a href="index.html">HOME PAGE</a></b> 
+            </p>
+
+        </div>
+        
+    </body>
+</html>
