@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Kefeng Wang 598 Assignment-4</title> 
+        <title>Kefeng Wang 598 Assignment-8</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
@@ -12,9 +12,14 @@
     <body> 
 
         <div class="header">
-            <h1>Assignment 7: Final Project Proposal</h1>
+            <h1>Assignment 8: Final Project Report</h1>
             <p>by Kefeng Wang in HCDE598</p>
-            <img src="images/a8-finalOutcomeW.png" width="800">
+            <img src="images/a8-printOutcome.JPG" width="800">
+            <video width="800" controls>
+                <source src="images/a8-finalV.MOV" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+              
             <h2>Concept</h2>
             <p>
                 What I want to make is a shredder as a Christmas gift for my friend. The video shown below is where I found my insights. Ideally, the shredder should be able to cut paper into
@@ -24,12 +29,13 @@
                 
             </iframe>
             <h2>3D Design in Rhino and Printing</h2>
+            <img src="images/a8-finalOutcomeW.png" alt="" width="800">
             <p>
                 My design has five major parts: a Funnel, an Upper Case, two sets of blades, and stand. In total, there are 20 pieces for the whole shredder. 5 blades are <b>Laser Cut</b> of the Acrylic board. Only one blade is <b>3D printed</b>.<br><br>
                 There are six spaces in the innards. 4 of them is created by <b>molding and casting</b> from the previous assignment. The rest two are also 3D printed. 
 
                 The rest parts are all designed in Rhino. I also use <b>Grasshopper</b> to create gears. <br><br>
-                You can download my STL file from <a href="images/a8-shredderF.stl">here</a>!
+                You can download my STL file from <a href="images/a8-shredderF.stl"><b>here</b></a>!
             </p>
             <img src="images/a8-piecesOverview.png" width="800">
             <table>
@@ -40,7 +46,7 @@
                 </tr>
                 <tr>
                     <td><a href="images/a8-funnel.stl">Funnel</a></td>
-                    <td><img src="images/a8-FunnelNeedToReplace.png" alt="" width="350"></td>
+                    <td><img src="images/a8-funnelPrinted.JPG" alt="" width="350"></td>
                     <td>Rhino & 3D printing</td>
                 </tr>
                 <tr>
@@ -51,12 +57,12 @@
                 <tr>
                     <td><a href="images/a8-leftBladeC.stl">Left set of the Blades</a></td>
                     <td><img src="images/a8-leftBladesCImg.png" alt="" width="350"></td>
-                    <td>Rhino, 3D printing, Modling(Spaceers), Laser Cutting(Blades), Grasshopper(Gear)</td>
+                    <td>Rhino,<br> 3D printing,<br> Modling(Spaceers),<br> Laser Cutting(Blades),<br> Grasshopper(Gear)</td>
                 </tr>
                 <tr>
                     <td><a href="images/a8-RightBladesCwithhand.stl">Right set of the blades with hand lever</a></td>
                     <td><img src="images/a8-rightBladeIMG.JPG" alt="" width="350"></td>
-                    <td>Rhino, 3D printing, Modling(Spaceers), Laser Cutting(Blades),Grasshopper(Gear)</td>
+                    <td>Rhino,<br> 3D printing,<br> Modling(Spaceers),<br> Laser Cutting(Blades),<br> Grasshopper(Gear)</td>
                 </tr>
                 <tr>
                     <td><a href="images/a8-bottomPiece.stl">bottom Case of innards</a></td>
@@ -65,8 +71,13 @@
                 </tr>
                 <tr>
                     <td><a href="images/a8-stand.stl">Stand</a></td>
-                    <td><img src="" alt=""></td>
+                    <td><img src="images/a8-standP.JPG" alt="" width="350"></td>
                     <td>Rhino & 3D printing</td>
+                </tr>
+                <tr>
+                    <td><a href="images/a8-shredderF.stl">Whole Project</a></td>
+                    <td><img src="images/a8-printOutcome.JPG" alt="" width="350"></td>
+                    <td>Rhino,<br> 3D printing,<br> Modling(Spaceers),<br> Laser Cutting(Blades),<br> Grasshopper(Gear)</td>
                 </tr>
             </table>
            
@@ -90,9 +101,28 @@
 
             <h2>Revision</h2>
             <p>
-                If you looked back on the project propossal, there is no joints for the upper case and bottom case. After I printed them out, it would slide way when I trying to move the handle. So I revised my model in Rhino and adding the small joints to help the upper case attach to the bottom one closely. 
+                If you look back on the project proposal, there are no joints for the upper case and bottom case. After I printed them out, they would slide away when I was trying to move the handle. So I revised my model in Rhino and added the small hooks to make these two parts closely attached. 
             </p>
+            <img src="images/A8-hookv1.png" alt="" width="800">
+            <p>
+                The result is not doing well. I lost my very first hook on peeling off the support. What is worse is when I press the upper case toward the bottom case, the hook is broken into two parts. As the image showm below. All hooks circled in red were broken when I was trying to press the upper part. 
+            </p>
+            <img src="images/a8-brokenhooks.JPG" alt="" width="800">
+            <p>
+                After consideration, I realized the upper case would only slide away to the left or right instead of forward or backward. Thus, I added a wall on the left and right sides of the bottom pieces.
+            </p>
+            <img src="images/a8-wallOnLR.png" alt="" width="800">
+            <p>
+                Another thing that comes to mind when writing this document is laser cutting an Acrylic board burns more materials on the edges than cutting normal cardboard. I laser cut five blades, and the diameter of the hexagonal hole is 1.2 mm bigger than what I have designed. As a result, the center rotation shaft is too small to make the blades move together. So as a solution, I created several cylinders attached to the shaft to increase its diameter.  
+            </p>
+            <img src="images/a8-smallcylinder.png" alt="" width="800">
+            <h2>Bill of materials</h2>
+            <p>
+                I highly recommend 3D printing the whole project because there is uncertainly about laser cutting Acrylic boards. If you want to 3D print all materials, you need to prepare at least 403g filaments. The whole process would take more than two days to complete.
+            </p>
+            <img src="images/a8-billofM.png" alt="" width="800">
 
+            
             <p class="lastSen">
                 Here is all the documentation for assignment 8 !<br> 
              you can go back to the <b><a href="index.html">HOME PAGE</a></b> 
